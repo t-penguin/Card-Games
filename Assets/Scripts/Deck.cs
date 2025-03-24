@@ -21,6 +21,7 @@ public class Deck
 
     public void Shuffle()
     {
+        _topIndex = 0;
         for (int i = 0; i < 52; i++)
         {
             int r = Random.Range(i, 52);
