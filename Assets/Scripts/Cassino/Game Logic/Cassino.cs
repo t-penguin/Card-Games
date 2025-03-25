@@ -40,7 +40,7 @@ public class Cassino : MonoBehaviour
     /// <param name="selected">The new selected state of the card item</param>
     private void OnClickedTableCard(CardItem cardItem, bool selected)
     {
-        if (selected)
+        if (selected && !_selectedTableCards.Contains(cardItem))
             _selectedTableCards.Add(cardItem);
         else
             _selectedTableCards.Remove(cardItem);
